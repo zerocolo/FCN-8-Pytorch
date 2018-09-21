@@ -18,7 +18,7 @@ class FCN(nn.Module):
         super(FCN, self).__init__()
         self.features_123 = nn.Sequential(
             # conv1
-            nn.Conv2d(3, 64, 3, padding=100),
+            nn.Conv2d(3, 64, 3, padding=1),
             nn.ReLU(inplace=True),
             nn.Conv2d(64, 64, 3, padding=1),
             nn.ReLU(inplace=True),
